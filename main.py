@@ -19,7 +19,7 @@ os.environ["OPENAI_API_KEY"] = constants.OPENAI_API_KEY
 # Example of using the stocks service
 stocks_service.get_stock_data("TSLA")
 
-# Add you services here
+# Add your services here
 # ...
 # ...
 

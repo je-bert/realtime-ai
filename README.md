@@ -1,20 +1,44 @@
-# my-ai
+# realtime-ai
 
-Simple script to use ChatGPT on your own files.
-
-je_bert@Berts-MacBook-Pro my-ai % python3 -m venv venv          
-je_bert@Berts-MacBook-Pro my-ai % . venv/bin/activate
-(venv) je_bert@Berts-MacBook-Pro my-ai % pip3 install -r requirements.txt
+A simple script to utilize ChatGPT on your custom files and connect to various APIs for real-time data integration.
 
 ## Installation
 
-Install [Langchain](https://github.com/hwchase17/langchain) and other required packages.
-```
-pip install langchain openai chromadb tiktoken unstructured
-```
-Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and rename it to `constants.py`.
+1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/)
 
-Place your own data into `data/data.txt`.
+2. Clone this repository
+
+3. Navigate into the project directory
+
+  ```
+  > cd realtime-ai
+  ```
+
+4. Create a new virtual environment
+
+  MacOS & Linux
+  ```
+  > python -m venv venv
+  > . venv/bin/activate
+  ```
+
+  Windows
+  ```
+  > python -m venv venv
+  > venv/Scripts/activate.bat
+  ```
+
+5. Install the requirements
+
+  ```
+  > pip install -r requirements.txt
+  ```
+
+6. Set OpenAI API key
+
+  Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and rename it to `constants.py`.
+
+7. Place your own data into `data/data.txt`.
 
 ## Example usage
 
@@ -28,12 +52,12 @@ The current stock price of TSLA is $291.5899963378906.
 
 Test reading `data/data.txt` file.
 ```
-> python chatgpt.py "what is my dog's name"
+> python main.py "what is my dog's name"
 Your dog's name is Sunny.
 ```
 
 Test reading `data/cat.pdf` file.
 ```
-> python chatgpt.py "what is my cat's name"
+> python main.py "what is my cat's name"
 Your cat's name is Muffy.
 ```
