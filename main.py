@@ -10,10 +10,18 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
 from langchain.llms import OpenAI
 from langchain.vectorstores import Chroma
+from services import stocks_service
 
 import constants
 
 os.environ["OPENAI_API_KEY"] = constants.OPENAI_API_KEY
+
+# Example of using the stocks service
+stocks_service.get_stock_data("TSLA")
+
+# Add you services here
+# ...
+# ...
 
 # Enable to save to disk & reuse the model (for repeated queries on the same data)
 PERSIST = False

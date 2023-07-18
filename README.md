@@ -17,6 +17,15 @@ Modify `constants.py.default` to use your own [OpenAI API key](https://platform.
 Place your own data into `data/data.txt`.
 
 ## Example usage
+
+Test fetching `TSLA` stock data.
+```
+> python main.py "What is the current stock price of TSLA?"
+[*********************100%***********************]  1 of 1 completed
+Stock data exported successfully to data/TSLA.txt
+The current stock price of TSLA is $291.5899963378906.
+```
+
 Test reading `data/data.txt` file.
 ```
 > python chatgpt.py "what is my dog's name"
