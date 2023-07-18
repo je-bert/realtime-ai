@@ -4,3 +4,6 @@ persist/
 .DS_Store
 .chroma/
 venv
+data/*
+!data/cat.pdf
+!data/data.txt
